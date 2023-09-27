@@ -128,13 +128,15 @@
 
  @media only screen and (max-width: 600px) {
   body{
+    padding: 30px;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     background-color: #491579;
+    overflow: hidden;
  }
   main{
     width: 65vw;
@@ -184,7 +186,6 @@ button{
    font-family: "josefin sans", sans-serif;
 }
  #gameArea{
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,14 +202,20 @@ input{
 }
 #newGameButton button{
   margin: 2rem -2rem;
+  /* margin-top: 0.5rem; */
 }
 #textOutput{
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 .info{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+}
+.stats{
+  text-align: left;
+  margin-bottom: 2rem;
+  
 }
 }
